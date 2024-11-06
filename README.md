@@ -1,7 +1,6 @@
-<<<<<<< HEAD
+
 # Code-sHimanshu.github.io
-Portfolio Website
-=======
+
 ## Responsive Portfolio Website ✨
 
 Website link: https://code-shimanshu.github.io/
@@ -23,5 +22,5 @@ Website contains:
 If u liked my website and the code was useful to you, <br>
 feel free to leave a star (much appreciated) fork it and customize as you like! :)
 
-- Inspired design by Bedimcode-Alexa design 🙌
+Web Developer by Day & AI, ML enthusiast by night 🙌
 >>>>>>> 6846f85 (Initial commit for pportfolio website)
