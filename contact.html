@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="packages/css/swiper-bundle.min.css">
+
+    <!--==================== MAIN CSS ====================-->
+    <link rel="stylesheet" href="packages/css/styles.css">
+
+    <!--==================== CONTACT CSS ====================-->
+    <link rel="stylesheet" href="packages/css/contact_styles.css">
+
+    <title>Contact Me - Himanshu Singh</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <!-- Left side - Name -->
+            <a href="#" class="nav__logo">Himanshu Singh</a>
+
+            <!-- Right side - Navigation -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link active-link">
+                            <i class="uil uil-message nav__icon"></i> Contact
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="contact section">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container">
+                <!-- Left Side - Contact Information -->
+                <div class="contact__info">
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Call Me</h3>
+                            <span class="contact__subtitle">+91 8317000925</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">himanshu.singh_@outlook.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contact__subtitle">Prayagraj, Uttar Pradesh, India</span>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="contact__socials">
+                        <a href="https://www.linkedin.com/in/himanshu-singh-392699286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="contact__social-link">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://github.com/Code-sHimanshu" class="contact__social-link">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://x.com/HimanshuSingh71952" class="contact__social-link">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Side - Contact Form -->
+                <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <div class="contact__content">
+                            <label for="name" class="contact__label">Name</label>
+                            <input type="text" id="name" class="contact__input" required>
+                        </div>
+                        <div class="contact__content">
+                            <label for="email" class="contact__label">Email</label>
+                            <input type="email" id="email" class="contact__input" required>
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="subject" class="contact__label">Subject</label>
+                        <input type="text" id="subject" class="contact__input" required>
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="message" class="contact__label">Message</label>
+                        <textarea id="message" cols="0" rows="7" class="contact__input" required></textarea>
+                    </div>
+
+                    <button class="contact__button button button--flex">
+                        Send Message
+                        <i class="uil uil-message button__icon"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ... footer content ... -->
+</body>
+</html>

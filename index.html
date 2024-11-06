@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="./packages/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="./packages/css/styles.css">
+
+        <!-- Add EmailJS CDN in your HTML head -->
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <title>Himanshu</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Himanshu Singh</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <!-- Home -->
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+
+                        <!-- About -->
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> About
+                            </a>
+                        </li>
+
+                        <!-- Skills -->
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i> Skills
+                            </a>
+                        </li>
+
+                        <!-- Certificates -->
+                        <li class="nav__item">
+                            <a href="#certification" class="nav__link">
+                                <i class="uil uil-award nav__icon"></i> Certificates
+                            </a>
+                        </li>
+
+                        <!-- Achievements -->
+                        <li class="nav__item">
+                            <a href="#achievements" class="nav__link">
+                                <i class="uil uil-trophy nav__icon"></i> Achievements
+                            </a>
+                        </li>
+
+                        <!-- Projects -->
+                        <li class="nav__item">
+                            <a href="projects.html" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Projects
+                            </a>
+                        </li>
+
+                        <!-- Contact -->
+                        <li class="nav__item">
+                            <a href="contact.html" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!-- Home Section -->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/himanshu-singh-392699286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                            <a href="https://github.com/Code-sHimanshu" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                        130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                        129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                        165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                        129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    <image class="home__blob-img" x="12" y="18" href="packages\images\himanshu1.jpg"/>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home__title">Hi, I'm Himanshu</h1>
+                            <h3 class="home__subtitle">Web Developer & AI Enthusiast</h3>
+
+                            <div class="home__roles">
+                                <div class="role__wrapper">
+                                    <span class="role__item">Passionate Developer</span>
+                                    <span class="role__item">Machine Learning Enthusiast</span>
+                                    <span class="role__item">Innovator</span>
+                                </div>
+                            </div>
+
+                            <div class="home__description">
+                                Web Developer by day, AI enthusiast by night. 
+                                <span class="highlight">Transforming ideas into digital reality</span> while diving deep into the 
+                                <span class="highlight">future of intelligent systems</span>.
+                            </div>
+
+                            <a href="contact.html" class="button button--flex">
+                                Contact Me <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">My Introduction</span>
+
+                <div class="about__container container grid">
+                    <div class="about__img-wrapper">
+                        <!-- Simple image without blob/frame -->
+                        <img src="packages\images\himanshu1.jpg" alt="" class="about__img">
+                        <div class="about__badges">
+                            <span class="about__badge">Developer</span>
+                            <span class="about__badge">Designer</span>
+                        </div>
+                    </div>
+
+                    <div class="about__data">
+                        <div class="about__description">
+                            <p>Web developer, with extensive knowledge and years of experience, working in web technologies and UI/UX design, delivering quality work.</p>
+                        </div>
+
+                        <div class="about__info" data-animation="fade-up">
+                            <div class="about__info-box">
+                                <h3 class="about__info-title">2+</h3>
+                                <span class="about__info-name">Completed <br> projects</span>
+                            </div>
+
+                            <div class="about__info-box">
+                                <h3 class="about__info-title">05+</h3>
+                                <span class="about__info-name">Interest Areas <br> Hands-on Experienced</span>
+                            </div>
+
+                            <div class="about__info-box">
+                                <h3 class="about__info-title">3+</h3>
+                                <span class="about__info-name">Months <br> Internship</span>
+                            </div>
+
+                            <div class="about__info-box">
+                                <h3 class="about__info-title">5+</h3>
+                                <span class="about__info-name">Completed <br> Certifications</span>
+                            </div>
+                        </div>
+
+                        <div class="about__experience">
+                            <div class="experience__card">
+                                <div class="experience__icon">
+                                    <i class="uil uil-robot"></i>
+                                </div>
+                                <h3 class="experience__title">Robotics & AI Experience</h3>
+                                <p class="experience__subtitle">IIIT Allahabad</p>
+                                <div class="experience__bar">
+                                    <div class="experience__progress"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about__buttons">
+                            <a download="" href="Himanshu Singh (1).docx" class="button button--flex">
+                                Download CV<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                            <a href="contact.html" class="button button--flex button--outline">
+                                Let's Talk<i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My technical level</span>
+
+                <div class="skills__container container grid">
+                    <div>
+                         <!--==================== SKILL-1 ====================-->
+                        <div class="skills__content skills__open" data-animation="fade-left">
+                            <div class="skills__header">
+                                <i class="uil uil-analytics skills__icon"></i>
+                               <div>
+                                   <h1 class="skills__title">Data Analyst</h1>
+                                   <span class="skills__subtitle">Modern Analytics Tools</span>
+                               </div>
+
+                               <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            
+                            <div class="skills__list grid">
+                                <!-- Programming Languages -->
+                                <div class="skills__area">
+                                    <h3 class="skills__area-title">Programming</h3>
+                                    <div class="skills__box">
+                                        <div class="skills__data">
+                                            <i class="uil uil-programming-language"></i>
+                                            <span>Python</span>
+                                        </div>
+                                        <div class="skills__data">
+                                            <i class="uil uil-java-script"></i>
+                                            <span>Java</span>
+                                        </div>
+                                        <div class="skills__data">
+                                            <i class="uil uil-database"></i>
+                                            <span>SQL</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Development Tools -->
+                                <div class="skills__area">
+                                    <h3 class="skills__area-title">Development</h3>
+                                    <div class="skills__box">
+                                        <div class="skills__data">
+                                            <i class="uil uil-code-branch"></i>
+                                            <span>C</span>
+                                        </div>
+                                        <div class="skills__data">
+                                            <i class="uil uil-visual-studio"></i>
+                                            <span>C#</span>
+                                        </div>
+                                        <div class="skills__data">
+                                            <i class="uil uil-cube"></i>
+                                            <span>OOP</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <!--==================== SKILLS 2 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-money-bill skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__title">Relationship Manager at Bajaj Finserv</h1>
+                                    <span class="skills__subtitle">3 Months</span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            
+                            <div class="skills__list grid">
+                                <!-- Office Tools -->
+                                <div class="skills__area">
+                                    <h3 class="skills__area-title">Office Skills</h3>
+                                    <div class="skills__box">
+                                        <div class="skills__data">
+                                            <i class="uil uil-file-alt"></i>
+                                            <span>MS Office</span>
+                                        </div>
+                                        <div class="skills__data">
+                                            <i class="uil uil-chart"></i>
+                                            <span>MS Excel</span>
+                                        </div>
+                                        <div class="skills__data">
+                                            <i class="uil uil-presentation-line"></i>
+                                            <span>PowerPoint</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Professional Skills -->
+                                <div class="skills__area">
+                                    <h3 class="skills__area-title">Professional Skills</h3>
+                                    <div class="skills__box">
+                                        <div class="skills__data">
+                                            <i class="uil uil-users-alt"></i>
+                                            <span>Client Relations</span>
+                                        </div>
+                                        <div class="skills__data">
+                                            <i class="uil uil-analysis"></i>
+                                            <span>Data Analysis</span>
+                                        </div>
+                                        <div class="skills__data">
+                                            <i class="uil uil-comment-verify"></i>
+                                            <span>Communication</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <!--==================== SKILLS 3 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-brackets-curly skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__title">Web Developer</h1>
+                                    <span class="skills__subtitle">Frontend Development</span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            
+                            <div class="skills__list grid">
+                                <!-- Frontend Technologies -->
+                                <div class="skills__area">
+                                    <h3 class="skills__area-title">Frontend</h3>
+                                    <div class="skills__box">
+                                        <div class="skills__data">
+                                            <i class="uil uil-html5"></i>
+                                            <span>HTML</span>
+                                        </div>
+                                        <div class="skills__data">
+                                            <i class="uil uil-css3-simple"></i>
+                                            <span>CSS</span>
+                                        </div>
+                                        <div class="skills__data">
+                                            <i class="uil uil-java-script"></i>
+                                            <span>JavaScript</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Development Tools -->
+                                <div class="skills__area">
+                                    <h3 class="skills__area-title">Tools & Frameworks</h3>
+                                    <div class="skills__box">
+                                        <div class="skills__data">
+                                            <i class="uil uil-react"></i>
+                                            <span>React</span>
+                                        </div>
+                                        <div class="skills__data">
+                                            <i class="uil uil-github"></i>
+                                            <span>Git</span>
+                                        </div>
+                                        <div class="skills__data">
+                                            <i class="uil uil-server-network"></i>
+                                            <span>APIs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add this div for spacing -->
+                        <div class="skills__spacing"></div>
+
+                        <!--==================== SKILL-4 (AI & ML) ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-brain skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__title">AI & Machine Learning</h1>
+                                    <span class="skills__subtitle">Advanced AI Technologies & Methodologies</span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            
+                            <div class="skills__list grid">
+                                <!-- Core ML Skills -->
+                                <div class="skills__area">
+                                    <h3 class="skills__area-title">Machine Learning</h3>
+                                    <div class="skills__box">
+                                        <div class="skills__data">
+                                            <i class="uil uil-check-circle"></i>
+                                            <span>Supervised Learning</span>
+                                        </div>
+                                        <div class="skills__data">
+                                            <i class="uil uil-check-circle"></i>
+                                            <span>Unsupervised Learning</span>
+                                        </div>
+                                        <div class="skills__data">
+                                            <i class="uil uil-check-circle"></i>
+                                            <span>Transfer Learning</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Data & NLP -->
+                                <div class="skills__area">
+                                    <h3 class="skills__area-title">Data & NLP</h3>
+                                    <div class="skills__box">
+                                        <div class="skills__data">
+                                            <i class="uil uil-check-circle"></i>
+                                            <span>Data Preprocessing</span>
+                                        </div>
+                                        <div class="skills__data">
+                                            <i class="uil uil-check-circle"></i>
+                                            <span>Data Analysis</span>
+                                        </div>
+                                        <div class="skills__data">
+                                            <i class="uil uil-check-circle"></i>
+                                            <span>Natural Language Processing</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tools & Best Practices -->
+                                <div class="skills__area">
+                                    <h3 class="skills__area-title">Tools & Practices</h3>
+                                    <div class="skills__box">
+                                        <div class="skills__data">
+                                            <i class="uil uil-check-circle"></i>
+                                            <span>Version Control (Git)</span>
+                                        </div>
+                                        <div class="skills__data">
+                                            <i class="uil uil-check-circle"></i>
+                                            <span>Project Documentation</span>
+                                        </div>
+                                        <div class="skills__data">
+                                            <i class="uil uil-check-circle"></i>
+                                            <span>Technical Reporting</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certificates Section (as a separate section) -->
+            <section class="certification section" id="certification">
+                <h2 class="section__title">Certificates</h2>
+                <span class="section__subtitle">My Credentials</span>
+
+                <div class="certification__container container">
+                    <!-- Academic Certificates -->
+                    <div class="certification__card" data-animation="certificate">
+                        <i class="uil uil-graduation-cap certification__icon"></i>
+                        <h3 class="certification__title">B.Sc. Computer Science</h3>
+                        <span class="certification__subtitle">Sam Higginbottom University of Agriculture, Technology & Sciences</span>
+                        <span class="certification__date">
+                            <i class="uil uil-calendar-alt"></i>
+                            2022 - 2025
+                        </span>
+                        <p class="certification__description">Currently pursuing Bachelor's degree with focus on Computer Science and Programming.</p>
+                        <button class="certification__button">
+                            View Details <i class="uil uil-arrow-right certification__button-icon"></i>
+                        </button>
+                    </div>
+
+                    <!-- Technical Certifications -->
+                    <div class="certification__card" data-animation="certificate">
+                        <i class="uil uil-award certification__icon"></i>
+                        <h3 class="certification__title">Python Programming</h3>
+                        <span class="certification__subtitle">Coursera</span>
+                        <span class="certification__date">
+                            <i class="uil uil-calendar-alt"></i>
+                            2023
+                        </span>
+                        <p class="certification__description">Advanced Python programming concepts including OOP and Data Structures.</p>
+                        <button class="certification__button">
+                            View Certificate <i class="uil uil-arrow-right certification__button-icon"></i>
+                        </button>
+                    </div>
+
+                    <!-- Achievements -->
+                    <div class="certification__card" data-animation="certificate">
+                        <i class="uil uil-trophy certification__icon"></i>
+                        <h3 class="certification__title">Coding Competition Winner</h3>
+                        <span class="certification__subtitle">University Hackathon</span>
+                        <span class="certification__date">
+                            <i class="uil uil-calendar-alt"></i>
+                            2023
+                        </span>
+                        <p class="certification__description">First place in university-level coding competition for innovative web application.</p>
+                        <button class="certification__button">
+                            View Achievement <i class="uil uil-arrow-right certification__button-icon"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== CERTIFICATE 3 ====================-->
+                    <div class="certificate__content grid swiper-slide">
+                        <!-- Certificate placeholder -->
+                        <div class="certificate__placeholder">
+                            <i class="uil uil-shield-check"></i>
+                            <span>Google Cybersecurity</span>
+                        </div>
+
+                        <div class="certificate__data">
+                            <h3 class="certificate__title">Google Cybersecurity Professional Certificate</h3>
+                            <p class="certificate__description">
+                                Completed comprehensive training in cybersecurity fundamentals, security frameworks, 
+                                network security, Python scripting for security automation, and incident response.
+                            </p>
+                            <div class="certificate__info">
+                                <div>
+                                    <span class="certificate__info-title">Platform</span>
+                                    <span class="certificate__info-name">Coursera</span>
+                                </div>
+                                <div>
+                                    <span class="certificate__info-title">Date</span>
+                                    <span class="certificate__info-name">Dec 14, 2023</span>
+                                </div>
+                            </div>
+                            <!-- Updated button with direct link to certificate -->
+                            <a href="packages\images\google_cybersecurity_certificate.png" 
+                               class="button button--flex button--small certificate__button"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                View Certificate
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== CERTIFICATE 2 ====================-->
+                    <div class="certificate__content grid swiper-slide">
+                        <!-- Certificate placeholder -->
+                        <div class="certificate__placeholder">
+                            <i class="uil uil-react"></i>
+                            <span>React Native</span>
+                        </div>
+
+                        <div class="certificate__data">
+                            <h3 class="certificate__title">Master React Native (React Native CLI Edition)</h3>
+                            <p class="certificate__description">
+                                Mastered advanced React Native development including custom components, 
+                                native modules, app performance optimization, state management, and 
+                                real-world mobile app deployment using React Native CLI.
+                            </p>
+                            <div class="certificate__info">
+                                <div>
+                                    <span class="certificate__info-title">Platform</span>
+                                    <span class="certificate__info-name">Udemy</span>
+                                </div>
+                                <div>
+                                    <span class="certificate__info-title">Date</span>
+                                    <span class="certificate__info-name">Jan 30, 2024</span>
+                                </div>
+                            </div>
+                            <!-- Certificate view button -->
+                            <a href="packages\images\React Native Certificate_page-0001.jpg" 
+                               class="button button--flex button--small certificate__button"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                View Certificate
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+              <!--==================== ACHIEVEMENTS ====================-->
+        <section class="achievements section" id="achievements">
+            <h2 class="section__title">Achievements</h2>
+            <span class="section__subtitle">My Accomplishments</span>
+
+            <div class="achievements__container container grid">
+                <!-- Achievement 1 -->
+                <div class="achievement__content">
+                    <div class="achievement__data">
+                        <h3 class="achievement__title">Campus Ambassador at Internshala</h3>
+                        <div class="achievement__info">
+                            <span class="achievement__info-title">Date:</span>
+                            <span class="achievement__info-name">December 18, 2023</span>
+                        </div>
+                        <a href="packages\images\internshalaSP.jpg" 
+                           class="button button--flex button--small achievement__button"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            View Certificate
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Achievement 2 -->
+                <div class="achievement__content">
+                    <div class="achievement__data">
+                        <h3 class="achievement__title">Second Position in Project Exhibition'23</h3>
+                        <div class="achievement__info">
+                            <span class="achievement__info-title">Date:</span>
+                            <span class="achievement__info-name">April 20, 2023</span>
+                        </div>
+                        <a href="packages\images\project_Exhibition.jpg" 
+                           class="button button--flex button--small achievement__button"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            View Certificate
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Achievement 3 -->
+                <div class="achievement__content">
+                    <div class="achievement__data">
+                        <h3 class="achievement__title">Second Position in SCIENCE DAY Quiz</h3>
+                        <div class="achievement__info">
+                            <span class="achievement__info-title">Date:</span>
+                            <span class="achievement__info-name">February 28, 2023</span>
+                        </div>
+                        <a href="packages\images\quiz_Science_Day.jpg" 
+                           class="button button--flex button--small achievement__button"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            View Certificate
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Achievement 4 -->
+                <div class="achievement__content">
+                    <div class="achievement__data">
+                        <h3 class="achievement__title">Second Position in Fashion Show - Team Insight</h3>
+                        <div class="achievement__info">
+                            <span class="achievement__info-title">Date:</span>
+                            <span class="achievement__info-name">March 23-24, 2023</span>
+                        </div>
+                        <a href="packages\images\fashion_show.jpg" 
+                           class="button button--flex button--small achievement__button"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            View Certificate
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Achievement 5 -->
+                <div class="achievement__content">
+                    <div class="achievement__data">
+                        <h3 class="achievement__title">First Position in Band Performance</h3>
+                        <div class="achievement__info">
+                            <span class="achievement__info-title">Date:</span>
+                            <span class="achievement__info-name">March 2023</span>
+                        </div>
+                        <a href="packages\images\band,_Expressions23.jpg" 
+                           class="button button--flex button--small achievement__button"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            View Certificate
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Achievement 6 -->
+                <div class="achievement__content">
+                    <div class="achievement__data">
+                        <h3 class="achievement__title">Corona Yoddha Samman</h3>
+                        <div class="achievement__info">
+                            <span class="achievement__info-title">Date:</span>
+                            <span class="achievement__info-name">August 15, 2021</span>
+                        </div>
+                        <a href="packages\images\corona_Warrior.jpg" 
+                           class="button button--flex button--small achievement__button"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            View Certificate
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Qualification Section -->
+        <section class="qualification section">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">My Educational & Professional Journey</span>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target="#education">
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target="#work">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Work
+                    </div>
+                </div>
+
+                <div class="qualification__sections">
+                    <!-- Education -->
+                    <div class="qualification__content qualification__content-active" data-content id="education">
+                        <!-- BSc Computer Science -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">B.Sc. Computer Science</h3>
+                                <span class="qualification__subtitle">Sam Higginbottom University of Agriculture, Technology & Sciences</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2022 - 2025
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- Intermediate -->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Intermediate</h3>
+                                <span class="qualification__subtitle">St. John's School, Chandauli</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2017 - 2019
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- High School -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">High School</h3>
+                                <span class="qualification__subtitle">St. John's School, Chandauli</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2016 - 2017
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Work Experience -->
+                    <div class="qualification__content" data-content id="work">
+                        <!-- Add work experience here when available -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Work Experience Coming Soon</h3>
+                                <span class="qualification__subtitle">Currently Focusing on Studies</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Present
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Himanshu Singh</h1>
+                        <span class="footer__subtitle">Web Developer</span>
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#achievements" class="footer__link">Achievements</a>
+                        </li>
+                        <li>
+                            <a href="projects.html" class="footer__link">Projects</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="footer__link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__socials">
+                        <a href="https://www.facebook.com/Himansh71952?mibextid=ZbWKwL" target="_blank" class="footer__social">
+                            <i class="uil uil-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_shimanshu.singh_/" target="_blank" class="footer__social">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                        <a href="https://x.com/shimanshusingh_?t=Kt7wjQdgttKkcNdguokR2Q&s=09" target="_blank" class="footer__social">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+        
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="./packages/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="./packages/js/main.js"></script>
+
+        <!-- Scroll animation -->
+        <script>
+            const scrollElements = document.querySelectorAll('[data-animation]');
+            const sections = document.querySelectorAll('.section');
+
+            const elementInView = (el, offset = 0) => {
+                const elementTop = el.getBoundingClientRect().top;
+                return (
+                    elementTop <= 
+                    (window.innerHeight || document.documentElement.clientHeight) * (1 - offset)
+                );
+            };
+
+            const displayScrollElement = (element) => {
+                element.classList.add('animate-in');
+            };
+
+            const displaySection = (element) => {
+                element.classList.add('show-section');
+            };
+
+            const handleScrollAnimation = () => {
+                scrollElements.forEach((el) => {
+                    if (elementInView(el, 0.25)) {
+                        displayScrollElement(el);
+                    }
+                });
+                
+                sections.forEach((section) => {
+                    if (elementInView(section, 0.25)) {
+                        displaySection(section);
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', () => {
+                handleScrollAnimation();
+            });
+
+            // Initial check
+            handleScrollAnimation();
+
+            // Scroll animation for certificates
+            const certificateCards = document.querySelectorAll('[data-animation="certificate"]');
+
+            const observerOptions = {
+                threshold: 0.25
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {y
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-in');
+                    }
+                });
+            }, observerOptions);
+
+            certificateCards.forEach(card => {
+                observer.observe(card);
+            });
+
+            // Add this to your existing tabs functionality
+            const certificateTabs = document.querySelectorAll('[data-target]'),
+                  certificateContents = document.querySelectorAll('[data-content]')
+
+            certificateTabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const target = document.querySelector(tab.dataset.target)
+
+                    certificateContents.forEach(content => {
+                        content.classList.remove('qualification__content-active')
+                    })
+                    target.classList.add('qualification__content-active')
+
+                    certificateTabs.forEach(tab => {
+                        tab.classList.remove('qualification__active')
+                    })
+                    tab.classList.add('qualification__active')
+                })
+            })
+        </script>
+    </main>
+</body>
+
+</html>

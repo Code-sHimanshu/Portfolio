@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+    <!--==================== AOS CSS ====================-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="packages/css/swiper-bundle.min.css">
+    
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="packages/css/styles.css">
+    <link rel="stylesheet" href="packages/css/projects_styles.css">
+
+    <title>My Projects</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Himanshu Singh</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link active-link">
+                            <i class="uil uil-scenery nav__icon"></i> Projects
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== PROJECTS ====================-->
+        <section class="projects section">
+            <h2 class="section__title">My Projects</h2>
+            <span class="section__subtitle">Recent Works</span>
+
+            <!-- Project 1: Lung Cancer Prediction -->
+            <div class="project-block" style="background-image: url('packages/images/lung_cancer_bg.jpg');">
+                <div class="project-content container">
+                    <div class="project-info">
+                        <div class="projects__header">
+                            <i class="uil uil-medical-square projects__icon"></i>
+                            <h3 class="projects__title">Lung Cancer Prediction System</h3>
+                        </div>
+                        <div class="projects__body">
+                            <p class="projects__description">
+                                Advanced machine learning system using CNN & Transfer-Learning for accurate lung cancer detection and prediction.
+                            </p>
+                            <div class="projects__tech-stack">
+                                <!-- Frontend Technologies -->
+                                <span class="tech-stack__item" data-type="frontend">HTML5</span>
+                                <span class="tech-stack__item" data-type="frontend">CSS3</span>
+                                <span class="tech-stack__item" data-type="frontend">JavaScript</span>
+                                <span class="tech-stack__item" data-type="frontend">React</span>
+
+                                <!-- Backend Technologies -->
+                                <span class="tech-stack__item" data-type="backend">Node.js</span>
+                                <span class="tech-stack__item" data-type="backend">Express</span>
+                                <span class="tech-stack__item" data-type="backend">Python</span>
+
+                                <!-- Database Technologies -->
+                                <span class="tech-stack__item" data-type="database">MongoDB</span>
+                                <span class="tech-stack__item" data-type="database">MySQL</span>
+                            </div>
+                        </div>
+                        <div class="projects__footer">
+                            <a href="#" class="button button--flex button--small projects__button">
+                                Learn More
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Cyberbullying Detection -->
+            <div class="project-block" style="background-image: url('packages/images/cyberbyllying_dtection_system_bg.png');">
+                <div class="project-content container">
+                    <div class="project-info">
+                        <div class="projects__header">
+                            <i class="uil uil-shield-check projects__icon"></i>
+                            <h3 class="projects__title">Cyberbullying Detection System</h3>
+                        </div>
+                        <div class="projects__body">
+                            <p class="projects__description">
+                                ML-powered text analysis system to detect and prevent cyberbullying through advanced natural language processing.
+                            </p>
+                            <div class="projects__tech-stack">
+                                <!-- Frontend Technologies -->
+                                <span class="tech-stack__item" data-type="frontend">HTML5</span>
+                                <span class="tech-stack__item" data-type="frontend">CSS3</span>
+                                <span class="tech-stack__item" data-type="frontend">JavaScript</span>
+                                <span class="tech-stack__item" data-type="frontend">React</span>
+
+                                <!-- Backend Technologies -->
+                                <span class="tech-stack__item" data-type="backend">Node.js</span>
+                                <span class="tech-stack__item" data-type="backend">Express</span>
+                                <span class="tech-stack__item" data-type="backend">Python</span>
+
+                                <!-- Database Technologies -->
+                                <span class="tech-stack__item" data-type="database">MongoDB</span>
+                                <span class="tech-stack__item" data-type="database">MySQL</span>
+                            </div>
+                        </div>
+                        <div class="projects__footer">
+                            <a href="#" class="button button--flex button--small projects__button">
+                                Learn More
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Image Steganography -->
+            <div class="project-block" style="background-image: url('packages/images/data_encryption_bg.avif');">
+                <div class="project-content container">
+                    <div class="project-info">
+                        <div class="projects__header">
+                            <i class="uil uil-lock projects__icon"></i>
+                            <h3 class="projects__title">Image Steganography System</h3>
+                        </div>
+                        <div class="projects__body">
+                            <p class="projects__description">
+                                Secure data encryption and decryption system utilizing image steganography techniques for enhanced data privacy.
+                            </p>
+                            <div class="projects__tech-stack">
+                                <!-- Frontend Technologies -->
+                                <span class="tech-stack__item" data-type="frontend">HTML5</span>
+                                <span class="tech-stack__item" data-type="frontend">CSS3</span>
+                                <span class="tech-stack__item" data-type="frontend">JavaScript</span>
+                                <span class="tech-stack__item" data-type="frontend">React</span>
+
+                                <!-- Backend Technologies -->
+                                <span class="tech-stack__item" data-type="backend">Node.js</span>
+                                <span class="tech-stack__item" data-type="backend">Express</span>
+                                <span class="tech-stack__item" data-type="backend">Python</span>
+
+                                <!-- Database Technologies -->
+                                <span class="tech-stack__item" data-type="database">MongoDB</span>
+                                <span class="tech-stack__item" data-type="database">MySQL</span>
+                            </div>
+                        </div>
+                        <div class="projects__footer">
+                            <a href="#" class="button button--flex button--small projects__button">
+                                Learn More
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PROJECT IN MIND ====================-->
+        <section class="project section">
+            <div class="project__bg">
+                <div class="project__container container grid">
+                    <div class="project__data">
+                        <h2 class="project__title">You have a new project?</h2>
+                        <p class="project__description">Contact me now and get discounts on your Web development projects.</p>
+                        <a href="contact.html" class="button button--flex button--white">
+                            Contact me
+                            <i class="uil uil-message project__icon button__icon"></i>
+                        </a>
+                    </div>
+                    <img src="assets/img/project.png" alt="" class="project__img">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="packages/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="packages/js/main.js"></script>
+
+    <!--==================== AOS JS ====================-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+
+    <!--==================== PROJECTS JS ====================-->
+    <script src="packages/js/projects.js"></script>
+</body>
+</html> 
