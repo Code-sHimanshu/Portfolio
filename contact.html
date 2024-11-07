@@ -132,5 +132,41 @@
     </main>
 
     <!-- ... footer content ... -->
+
+    <script>
+        const form = document.querySelector('.contact__form');
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const subjectInput = document.getElementById('subject');
+        const messageInput = document.getElementById('message');
+
+        const handleSubmit = async (e) => {
+            e.preventDefault();
+            
+            try {
+                const response = await fetch('http://localhost:5000/api/contact/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        name: nameInput.value,
+                        email: emailInput.value,
+                        message: messageInput.value
+                    })
+                });
+
+                const data = await response.json();
+                alert(data.message);
+                // Clear form
+                form.reset();
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error sending message');
+            }
+        };
+
+        form.addEventListener('submit', handleSubmit);
+    </script>
 </body>
 </html>
