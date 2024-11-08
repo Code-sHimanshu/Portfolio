@@ -3,14 +3,21 @@ const mongoose = require('mongoose');
 const connectDB = async () => {
     try {
         if (!process.env.MONGODB_URI) {
-            throw new Error('MONGODB_URI is not defined');
+            throw new Error('MONGODB_URI environment variable is not defined');
         }
         
-        await mongoose.connect(process.env.MONGODB_URI);
-        console.log('MongoDB से कनेक्शन सफल रहा!');
+        const options = {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+        };
+
+        await mongoose.connect(process.env.MONGODB_URI, options);
+        console.log('MongoDB connected successfully');
     } catch (error) {
-        console.error('MongoDB कनेक्शन एरर:', error.message);
-        process.exit(1);
+        console.error('MongoDB connection error:', error.message);
+        if (process.env.NODE_ENV !== 'test') {
+            process.exit(1);
+        }
     }
 };
 
