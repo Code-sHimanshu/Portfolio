@@ -2902,8 +2902,7 @@ _placeholder {
     .achievements__container {
         grid-template-columns: repeat(3, 1fr);
     }
-}
-
+} 
 
 
 /* Notification Styles */

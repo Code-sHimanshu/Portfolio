@@ -1,4 +1,4 @@
-// सर्कुलर प्रोग्रेस बार एनीमेशन
+// Circular Progress Bar Animation
 const progressBars = document.querySelectorAll('.circular-progress');
 
 function animateProgress() {
@@ -14,7 +14,7 @@ function animateProgress() {
     });
 }
 
-// Intersection Observer का उपयोग करें ताकि स्क्रॉल करने पर एनीमेशन शुरू हो
+// Use Intersection Observer to start animation on scroll
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -24,8 +24,10 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.5 });
 
-// स्किल्स सेक्शन को ऑब्जर्व करें
+// Observe the skills section
 const skillsSection = document.querySelector('.skills__circular');
 if (skillsSection) {
     observer.observe(skillsSection);
 } 
+
+ 

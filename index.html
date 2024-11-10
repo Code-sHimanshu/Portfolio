@@ -12,6 +12,8 @@
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="./packages/css/styles.css">
+        <link rel="stylesheet" href="./assets/css/activities_styles.css">
+        <link rel="stylesheet" href="./assets/css/activityHoverStyles.css">
 
         <!-- Add EmailJS CDN in your HTML head -->
         <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -67,6 +69,13 @@
                                 <i class="uil uil-scenery nav__icon"></i> Projects
                             </a>
                         </li>
+                        
+                        <!-- Activities -->
+                        <li class="nav__item">
+                            <a href="#activities" class="nav__link">
+                                <i class="uil uil-calendar-alt nav__icon"></i> Activities
+                            </a>
+                        </li>
 
                         <!-- Contact -->
                         <li class="nav__item">
@@ -74,6 +83,7 @@
                                 <i class="uil uil-message nav__icon"></i> Contact
                             </a>
                         </li>
+
                     </ul>
                     <i class="uil uil-times nav__close" id="nav-close"></i>
                 </div>
@@ -212,7 +222,7 @@
                         </div>
 
                         <div class="about__buttons">
-                            <a download="" href="Himanshu Singh (1).docx" class="button button--flex">
+                            <a download="" href="Himanshu Singh CV.pdf" class="button button--flex">
                                 Download CV<i class="uil uil-download-alt button__icon"></i>
                             </a>
                             <a href="contact.html" class="button button--flex button--outline">
@@ -801,7 +811,105 @@
             </div>
         </section>
 
+        <!-- Activities Section -->
+        <section class="activities section" id="activities">
+            <h2 class="section__title">Activities</h2>
+            <span class="section__subtitle">My Extracurricular Engagements</span>
 
+            <div class="activities__container container">
+                <div class="activities__tabs">
+                    <div class="activities__content activities__active">
+                        <!-- Activity 1 -->
+                        <div class="activities__data">
+                            <div>
+                                <h3 class="activities__title">Coordinator, Xpressions</h3>
+                                <span class="activities__subtitle">University Youth Fest, SHUATS-2023</span>
+                            </div>
+                        </div>
+
+                        <!-- Activity 2 -->
+                        <div class="activities__data">
+                            <div>
+                                <h3 class="activities__title">Coordinator, Kritagyata Mahotsav</h3>
+                                <span class="activities__subtitle">University Fest, SHUATS-2024</span>
+                            </div>
+                        </div>
+
+                        <!-- Activity 3 -->
+                        <div class="activities__data">
+                            <div>
+                                <h3 class="activities__title">Research Methodology Workshop Coordinator</h3>
+                                <span class="activities__subtitle">SHUATS-2024</span>
+                            </div>
+                        </div>
+
+                        <!-- Activity 4 -->
+                        <div class="activities__data">
+                            <div>
+                                <h3 class="activities__title">Food Fest Coordinator</h3>
+                                <span class="activities__subtitle">World Food Day, SHUATS-2024</span>
+                            </div>
+                        </div>
+
+                        <!-- Activity 5 -->
+                        <div class="activities__data">
+                            <div>
+                                <h3 class="activities__title">Project Exhibition Coordinator & Second Winner</h3>
+                                <span class="activities__subtitle">SHUATS-2023</span>
+                            </div>
+                        </div>
+
+                        <!-- Activity 6 -->
+                        <div class="activities__data">
+                            <div>
+                                <h3 class="activities__title">Corona Yoddha Samman</h3>
+                                <span class="activities__subtitle">Sardar Patel Vidhik Sahayata awam Jagrukta Samiti(NGO), Prayagraj-2021</span>
+                            </div>
+                        </div>
+
+                        <!-- Activity 7 -->
+                        <div class="activities__data">
+                            <div>
+                                <h3 class="activities__title">Band Performance Winner</h3>
+                                <span class="activities__subtitle">Xpressions'23, SHUATS-2023</span>
+                            </div>
+                        </div>
+
+                        <!-- Activity 8 -->
+                        <div class="activities__data">
+                            <div>
+                                <h3 class="activities__title">Science Quiz Winner</h3>
+                                <span class="activities__subtitle">CSI (Computer Society of India) on National Science Day, SHUATS-2023</span>
+                            </div>
+                        </div>
+
+                        <!-- Activity 9 -->
+                        <div class="activities__data">
+                            <div>
+                                <h3 class="activities__title">Google Devfest Coordinator</h3>
+                                <span class="activities__subtitle">Prayagraj-2023</span>
+                            </div>
+                        </div>
+
+                        <!-- Activity 10 -->
+                        <div class="activities__data">
+                            <div>
+                                <h3 class="activities__title">Quiz Competition (2nd Position)</h3>
+                                <span class="activities__subtitle">National Librarian Day, SHUATS-2024</span>
+                            </div>
+                        </div>
+
+                        <!-- Activity 11 -->
+                        <div class="activities__data">
+                            <div>
+                                <h3 class="activities__title">Fashion Show Runner-up (2nd Position)</h3>
+                                <span class="activities__subtitle">Xpressions'23, SHUATS-2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!--==================== FOOTER ====================-->
         <footer class="footer">
@@ -932,7 +1040,11 @@
                 })
             })
         </script>
+
+        
     </main>
+    <!-- Scripts -->
+    <script src="assets\js\activity_main.js"></script>
 </body>
 
 </html>
