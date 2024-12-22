@@ -1228,19 +1228,22 @@ img {
 
 /* Background decoration */
 .qualification__container::before {
-    content: '';
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background: radial-gradient(
-        circle,
-        rgba(var(--first-color-rgb), 0.1) 0%,
-        transparent 70%
-    );
-    top: -100px;
-    right: -100px;
-    border-radius: 50%;
-    z-index: -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(
+      circle,
+      rgba(var(--first-color-rgb), 0.1) 0%,
+      transparent 70%
+  );
+  top: -100px;
+  right: -100px;
+  border-radius: 50%;
+  z-index: -1;
 }
 
 .qualification__container::after {
@@ -1262,6 +1265,7 @@ img {
 /* For medium devices */
 @media screen and (max-width: 768px) {
     .qualification__container {
+      grid-template-columns: 1fr;
         margin-left: var(--mb-1-5);
         margin-right: var(--mb-1-5);
     }
