@@ -123,7 +123,10 @@ html {
 }
 
 body {
-  margin: 5 5 var(--header-height) 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0; /* सुनिश्चित करें कि बॉडी पर कोई मार्जिन नहीं है */
   font-family: var(--body-font);
   font-size: var(--smaller-font-size);
   background-color: var(--body-color);
@@ -1603,7 +1606,11 @@ img {
 
 /*==================== FOOTER ====================*/
 .footer {
-  padding-top: 2rem;
+  background: none; 
+  box-shadow: none; 
+  padding: 2rem 0;
+  color: #fff;
+  text-align: center;
 }
 
 .footer__container {
@@ -1611,7 +1618,7 @@ img {
 }
 
 .footer__bg {
-  background-color: var(--first-color-second);
+  background-color: var(--first-color-second):oklch(from #00C851 l c h);
   padding: 2rem 0 3rem;
 }
 
@@ -1631,7 +1638,7 @@ img {
 }
 
 .footer__link:hover {
-  color: var(--first-color-lighter);
+  color: #ffffff;
 }
 
 .footer__social {
@@ -2947,4 +2954,9 @@ _placeholder {
     color: #00C851;
     font-size: var(--smaller-font-size);
     margin-top: 0.25rem;
+}
+
+main {
+    flex: 1;
+    /* अन्य स्टाइल्स */
 }
