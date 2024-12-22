@@ -1618,8 +1618,7 @@ img {
 }
 
 .footer__bg {
-  background-color: var(--first-color-second):oklch(from #00C851 l c h);
-  padding: 2rem 0 3rem;
+  background-color: var(--first-color-second);
 }
 
 .footer__title {
