@@ -195,32 +195,28 @@ img {
 /* Header Styles with improved theme handling */
 .header {
     width: 100%;
+    background-color: rgba(0 130 136);
     position: fixed;
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
     transition: all 0.3s ease;
+    padding: 1rem 0.5rem;
 }
 
 /* Light Theme Header */
 .header {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(0 130 136);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(6, 168, 119, 0.96);
+    box-shadow: 0 2px 10px rgba(78, 93, 12, 0.05);
 }
 
 .nav__link {
     color: var(--title-color);
-    font-weight: 500;
+    font-weight: xxx-bold;
 }
-
-.nav__link:hover {
-    color: var(--first-color);
-    background: rgba(139, 92, 246, 0.1);
-}
-
 .active-link {
     color: var(--first-color);
     background: rgba(139, 92, 246, 0.15);
@@ -228,7 +224,7 @@ img {
 
 /* Dark Theme Header */
 [data-theme="dark"] .header {
-    background: rgba(16, 14, 23, 0.95);  /* Dark background */
+    background: rgba(0 130 136);  /* Dark background */
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -251,9 +247,9 @@ img {
 
 /* Logo Styles */
 .nav__logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    background: linear-gradient(45deg, #8b5cf6, #6366f1, #a855f7);
+    font-size: xxx-large;
+    font-weight: xxx-bold;
+    background: linear-gradient(90deg, #92e355, #64d4e1, #ee6df5);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -272,7 +268,8 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    padding: 2rem 2rem;
+    background-color: #03818a;
 }
 
 /* Theme Toggle Button */
@@ -304,33 +301,34 @@ img {
 
     /* Light Theme Mobile Menu */
     .nav__menu {
-        background: rgba(255, 255, 255, 0.98);
+        background: rgba(3, 78, 96, 0.98);
         box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.1);
     }
 
     /* Dark Theme Mobile Menu */
     [data-theme="dark"] .nav__menu {
-        background: rgba(16, 14, 23, 0.98);
+        background: rgba(3, 69, 81, 0.98);
         box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.2);
     }
 }
 
 /* Scroll Header */
 .scroll-header {
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 4px rgba(11, 217, 35, 0.1);
 }
 
 [data-theme="dark"] .scroll-header {
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 4px rgba(124, 2, 2, 0.2);
 }
 
 /* Navigation Icons */
 .nav__icon {
-    font-size: 1.2rem;
+    font-size: 5rem;
+    font-weight: xx-bolder;
 }
 
 [data-theme="dark"] .nav__icon {
-    color: #fff;
+    color: #14e5f0;
 }
 
 /*==================== NAV ====================*/
@@ -342,7 +340,7 @@ img {
 }
 
 .nav__logo:hover {
-  color: var(--first-color);
+  color: #07ae49;
 }
 
 .nav__toggle {
@@ -1610,42 +1608,46 @@ img {
 
 /*==================== FOOTER ====================*/
 .footer {
-  background: none; 
+  background: rgba(0 130 136); 
   box-shadow: none; 
-  padding: 2rem 0;
-  color: #fff;
+  padding: 1pcrem 0;
+  color: #2285af;
   text-align: center;
 }
 
 .footer__container {
-  row-gap: 3.5rem;
+  row-gap: 5 rem;
 }
 
 .footer__bg {
-  background-color: var(--first-color-second);
+  background-color: rgba(0 130 136);
 }
 
 .footer__title {
-  font-size: var(--h1-font-size);
+  font-size: var(--big-font-size);
+  font-weight: extra-bold;
   margin-bottom: var(--mb-0-25);
+  margin-right: 5rem;
+  margin-left: 5rem;
 }
 
 .footer__subtitle {
-  font-size: var(--small-font-size);
+  font-size: 1.5rem;
 }
 
 .footer__links {
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
 }
 
 .footer__link:hover {
-  color: #ffffff;
+  color: #e00cce;
 }
 
 .footer__social {
-  font-size: 1.25rem;
+  font-size: 2.5rem;
   margin-right: var(--mb-1-5);
 }
 
@@ -2288,7 +2290,7 @@ img {
 /* Enhanced hover effects */
 .certification__card:hover {
     transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(var(--first-color-rgb), 0.15);
+    box-shadow: 0 20px 40px rgba(#07ae49, 0.15);
     border-color: rgba(var(--first-color-rgb), 0.2);
 }
 
@@ -2782,7 +2784,7 @@ _placeholder {
     backdrop-filter: blur(5px);
 }
 
-.certificate-modal__content {
+tificate-modal__content {
     position: relative;
     margin: auto;
     padding: 20px;
