@@ -3,7 +3,7 @@
 
 ## Responsive Portfolio Website ✨
 
-Website link: https://code-shimanshu.github.io/
+Website link: https://code-shimanshu.github.io/portfolio/
 
 Responsive Portfolio Website Using HTML, CSS and JavaScript, with a beautiful user interface. 
 Website contains: 
