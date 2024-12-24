@@ -2318,10 +2318,12 @@ img {
 .certification__card {
     background: var(--container-color);
     padding: 2rem;
-    border-radius: 5rem;
+    height: auto;
+    gap: 3rem;
+    align-items: center;
+    border-radius: 3rem;
     position: relative;
-    overflow: hidden;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 8px 24px rgba(194, 90, 228, 0.911);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid rgba(var(--first-color-rgb), 0.1);
 }

@@ -20,7 +20,7 @@
 }
 
 .activities__data {
-    background-color: var(--container-color);
+    background-color: #23ef0c;
     padding: 1.5rem;
     border-radius: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
