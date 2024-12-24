@@ -1,9 +1,10 @@
 /* Activities Section */
 .activities__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 1rem;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 6rem;
+    padding: 3rem;
+    justify-content: center;
 }
 
 .activities__content {
@@ -40,6 +41,9 @@
     margin-bottom: 1rem;
 }
 
+.activity__header:hover{
+    transform: translateY(-0.25rem);
+}
 .activity__icon {
     font-size: 2rem;
     color: var(--first-color);

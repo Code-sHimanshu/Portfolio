@@ -3,7 +3,8 @@
 
 /*==================== VARIABLES CSS ====================*/
 :root {
-  --header-height: 3rem;
+  --header-height: 5rem;
+  --header-style: transparent;
 
   /*========== Colors ==========*/
   /* Change favorite color */
@@ -170,6 +171,7 @@ img {
 
 .section__subtitle {
   display: block;
+  color: #022c37;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-2);
 }
@@ -196,12 +198,11 @@ img {
 .header {
     width: 100%;
     background-color: rgba(0 130 136);
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
     transition: all 0.3s ease;
-    padding: 1rem 0.5rem;
 }
 
 /* Light Theme Header */
@@ -209,8 +210,8 @@ img {
     background: rgba(0 130 136);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    border-bottom: 1px solid rgba(6, 168, 119, 0.96);
-    box-shadow: 0 2px 10px rgba(78, 93, 12, 0.05);
+    border-bottom: 1px solid rgba(168, 6, 6, 0.96);
+    box-shadow: 0 2px 10px rgba(234, 231, 10, 0.05);
 }
 
 .nav__link {
@@ -475,7 +476,7 @@ img {
 
 .home__subtitle {
   font-size: var(--h3-font-size);
-  color: var(--text-color);
+  color: #03818a;
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-0-75);
 }
@@ -484,6 +485,7 @@ img {
   font-size: var(--h3-font-size);
   line-height: 1.8;
   margin: 2rem 0;
+  color:hsl(340deg 81.96% 35.22%) ;
   padding: 0.5rem;
   position: relative;
   animation: slideUp 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -694,11 +696,11 @@ img {
 .about__description {
   position: relative;
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(240, 204, 204, 0.9);
   border-radius: 1rem;
   border-left: 4px solid var(--first-color);
   margin: 2rem 0;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   line-height: 1.8;
   color: var(--text-color);
 }
@@ -711,7 +713,7 @@ img {
 }
 
 .about__info-box {
-  background: linear-gradient(145deg, #ffffff, #f3f3f3);
+  background: linear-gradient(145deg, #26eae6, #c02484);
   padding: 1.5rem;
   border-radius: 1rem;
   text-align: center;
@@ -745,8 +747,9 @@ img {
 }
 
 .about__info-title {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 600;
+  color: #03768a;
   background: linear-gradient(45deg, var(--first-color), var(--first-color-alt));
   background-clip: text;
   -webkit-background-clip: text;
@@ -756,8 +759,8 @@ img {
 }
 
 .about__info-name {
-  font-size: 0.9rem;
-  color: var(--text-color);
+  font-size: 1rem;
+  color: #022d3a;
 }
 
 .about__buttons {
@@ -879,7 +882,7 @@ img {
 
 .skills__subtitle {
   font-size: var(--small-font-size);
-  color: var(--text-color-light);
+  color: #02444a;
 }
 
 .skills__arrow {
@@ -887,7 +890,7 @@ img {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background: linear-gradient(45deg, #e60c72, #4c0967);
+  background: linear-gradient(45deg, #066076, #5abecd);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -895,7 +898,7 @@ img {
 }
 
 .skills__arrow i {
-  color: #fff;
+  color: #014152;
   font-size: 1.25rem;
   transition: transform 0.4s ease;
 }
@@ -909,7 +912,8 @@ img {
 .skills__data {
   position: relative;
   padding: 1.5rem 2rem;
-  background: rgba(255, 255, 255, 0.9);
+  color: #022f37;
+  background: rgba(137, 177, 187, 0.453);
   border-radius: 15px;
   margin-bottom: 1rem;
   transform: translateY(20px);
@@ -930,7 +934,7 @@ img {
   background: linear-gradient(45deg, #e60c72, #4c0967);
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
+  color: #00C851;
 }
 
 .skills__number {
@@ -1919,6 +1923,8 @@ img {
     }
     .about__description {
       text-align: initial;
+      color: hsl(340deg 81.96% 35.22%);
+      
     }
     .about__info {
       justify-content: space-between;
@@ -2349,7 +2355,7 @@ img {
 
 .certification__description {
     font-size: var(--small-font-size);
-    color: var(--text-color);
+    color: #014152;
     margin: 1rem 0;
 }
 
