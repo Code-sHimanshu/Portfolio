@@ -20,8 +20,8 @@
   --text-color-light: hsl(var(--hue-color), 8%, 65%);
   --input-color: hsl(var(--hue-color), 70%, 96%);
   --body-color: hsl(var(--hue-color), 60%, 99%);
-  --container-color: #fff;
-  --scroll-bar-color: #F1F1F1;
+  --container-color: #d1acac;
+  --scroll-bar-color: #ffffff;
   --scroll-thumb-color: #6E57E0;
 
   /*========== Font and typography ==========*/
@@ -160,9 +160,10 @@ img {
 .section {
   padding: 2rem 0 4rem;
   margin-bottom: 40px;
-  background: rgba(156 220 224 / 80%);
+  background: rgba(126, 217, 223, 0.8);
   border-radius: 2rem;
   margin: 2rem 0;
+  box-shadow: 5px 15px 18px rgba(64, 225, 240, 0.8)
 }
 
 .section__title {
@@ -210,12 +211,12 @@ img {
     background: rgba(0 130 136);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    border-bottom: 1px solid rgba(168, 6, 6, 0.96);
-    box-shadow: 0 2px 10px rgba(234, 231, 10, 0.05);
+    border-bottom: 1px solid rgba(239, 94, 241, 0.96);
+    box-shadow: rgba(156 220 224 / 80%);
 }
 
 .nav__link {
-    color: var(--title-color);
+    color: rgba(139, 92, 246, 0.15);
     font-weight: xxx-bold;
 }
 .active-link {
@@ -233,7 +234,7 @@ img {
 }
 
 [data-theme="dark"] .nav__link {
-    color: #fff;
+    color: rgba(139, 92, 246, 0.15);
 }
 
 [data-theme="dark"] .nav__link:hover {
@@ -291,7 +292,7 @@ img {
 /* Mobile Menu */
 @media screen and (max-width: 768px) {
     .nav__menu {
-        position: fixed;
+        position: relative;;
         bottom: -100%;
         left: 0;
         width: 100%;
@@ -376,8 +377,9 @@ img {
   flex-direction: column;
   align-items: center;
   font-size: var(--small-font-size);
-  color: var(--title-color);
-  font-weight: var(--font-medium);
+  color: #0ce6de;
+  font-weight: xx-bold;
+  font-size: x-large;
 }
 
 .nav__link:hover {
@@ -551,7 +553,7 @@ img {
   height: 100%;
   left: 0;
   top: 0;
-  border: 2px solid hsl(351.07deg 94.33% 47.65%);
+  border: 2px solid hsl(198, 70%, 62%);
   border-radius: 0.5rem;
   opacity: 0.3;
   animation: float 3s ease-in-out infinite;
@@ -598,10 +600,10 @@ img {
 .button {
   display: inline-block;
   background: linear-gradient(45deg, 
-  hsl(271, 65%, 49%) 0%,
-      hsl(167, 86%, 57%) 100%);
+  hsl(271, 61%, 72%) 0%,
+      hsl(21, 74%, 62%) 100%);
 
-  color: #dcf808;
+  color: #602358;
   padding: 1rem;
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
@@ -610,8 +612,8 @@ img {
 
 .button:hover {
   background: linear-gradient(45deg, 
-      var(--first-color-alt) 0%, 
-      var(--first-color) 100%
+      #55e2ac 50%, 
+      #0ce6de 100%
   );
   transform: translateY(-2px);
 }
@@ -656,7 +658,7 @@ img {
 .about__container {
   position: relative;
   padding: 2rem;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+  background: linear-gradient(145deg, rgba(253, 252, 252, 0.9), rgba(255, 255, 255, 0.7));
   border-radius: 2rem;
   box-shadow: 0 8px 32px rgba(76, 9, 103, 0.1);
   backdrop-filter: blur(10px);
@@ -685,7 +687,7 @@ img {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(45deg, transparent, rgba(230, 12, 114, 0.3));
+  background: linear-gradient(45deg, transparent, rgba(240, 177, 206, 0.3));
   animation: shine 2s infinite;
 }
 
@@ -1941,7 +1943,7 @@ img {
     }
     .about__description {
       text-align: initial;
-      color: hsl(340deg 81.96% 35.22%);
+      color: hsl(340, 69%, 44%);
       
     }
     .about__info {
@@ -2316,7 +2318,7 @@ img {
 }
 
 .certification__card {
-    background: var(--container-color);
+    background: #8ce4eb;
     padding: 2rem;
     height: auto;
     gap: 3rem;
