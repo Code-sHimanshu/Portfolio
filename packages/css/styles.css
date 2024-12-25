@@ -160,10 +160,19 @@ img {
 .section {
   padding: 2rem 0 4rem;
   margin-bottom: 40px;
-  background: rgba(126, 217, 223, 0.8);
+  background: rgba(119, 198, 204, 0.8);
   border-radius: 2rem;
   margin: 2rem 0;
-  box-shadow: 5px 15px 18px rgba(64, 225, 240, 0.8)
+  box-shadow: 10px 20px 50px #14e5f0
+}
+
+/*--For dark Mode--*/
+@media (prefers-color-scheme: dark) {
+  .section {
+      background-color: #02353ad8; 
+      color: #b4a4a4; 
+      box-shadow: 10px 20px 50px #14e5f0;
+  }
 }
 
 .section__title {
@@ -198,7 +207,7 @@ img {
 /* Header Styles with improved theme handling */
 .header {
     width: 100%;
-    background-color: rgba(0 130 136);
+    background-color: #03818a;
     position: relative;
     top: 0;
     left: 0;
@@ -226,12 +235,14 @@ img {
 
 /* Dark Theme Header */
 [data-theme="dark"] .header {
-    background: rgba(0 130 136);  /* Dark background */
+    background: rgb(66, 21, 1);  /* Dark background */
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
+
+
 
 [data-theme="dark"] .nav__link {
     color: rgba(139, 92, 246, 0.15);
@@ -339,6 +350,7 @@ img {
   color: rgb(248, 3, 174);
   font-weight: bolder;
   font-size: x-large;
+  padding-right: 10rem;
 }
 
 .nav__logo:hover {
@@ -346,12 +358,12 @@ img {
 }
 
 .nav__toggle {
-  font-size: 1.1rem;
+  font-size: 10rem;
   cursor: pointer;
 }
 
 .nav__toggle:hover {
-  color: var(--first-color);
+  color: #14e5f0;
 }
 
 @media screen and (max-width: 767px) {
@@ -882,7 +894,7 @@ img {
 .skills__title {
   font-size: var(--h3-font-size);
   font-weight: 600;
-  color: var(--title-color);
+  color: hsl(340deg 89.7% 32.46%);
   margin-bottom: 0.25rem;
 }
 
@@ -2532,8 +2544,9 @@ section {
 
 /* Adjust header background */
 .header {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(0 130 136);
     backdrop-filter: blur(10px);
+    box-shadow: 10px 20px 50px #14e5f0;
 }
 
 /* Footer background adjustment */
@@ -2568,6 +2581,7 @@ section {
     
     .header {
         background: rgba(19, 244, 240, 0.515);
+        padding: 3rem 3rem;
     }
 }
 
@@ -3026,3 +3040,7 @@ main {
   transform: translateY(-5px);
     box-shadow: 0 12px 40px rgba(253, 94, 221, 0.971);
 }
+
+
+
+
